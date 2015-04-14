@@ -49,6 +49,7 @@ MAKE.decl('BundleNode', {
                 'libs/bnsf/dev.blocks',
                 'libs/bnsf/history-api-fallback.blocks',
                 'libs/bnsf/ie-dev.blocks',
+                'libs/bem-grid/common.blocks',
                 'desktop.blocks'
             ]
         };
