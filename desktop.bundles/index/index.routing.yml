@@ -3,3 +3,6 @@
 
 - id: page-index
   path: /
+
+- id: page-registration-step1
+  path: /registration/step1

@@ -1,0 +1,7 @@
+block('registration-step1-header')
+	.elem('title')
+		.tag()('h1');
+
+block('registration-step1-header')
+	.elem('subtitle')
+		.tag()('h2');

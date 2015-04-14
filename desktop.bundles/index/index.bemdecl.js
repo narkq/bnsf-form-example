@@ -8,5 +8,6 @@ exports.blocks = [
     {name: 'page-500'},
 
     // project part
-    {name: 'page-index'}
+    {name: 'page-index'},
+    {name: 'page-registration-step1'}
 ];

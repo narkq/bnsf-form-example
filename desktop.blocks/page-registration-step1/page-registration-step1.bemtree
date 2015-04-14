@@ -1,0 +1,43 @@
+block('page-registration-step1').content()(function () {
+    return [
+		{
+			block: 'row',
+			content: [
+				{
+					elem: 'col',
+					content: [
+					{
+						block: 'registration-step1-header',
+						content: [
+							{
+								elem: 'title',
+								content: 'Регистрация'
+							},
+							{
+								elem: 'subtitle',
+								content: 'Всего 42 простых шага'
+							}
+						]
+					}]
+				},
+			]
+		},
+		{
+			block: 'row',
+			content: [
+				{
+					elem: 'col',
+					mods: { mw: 6 },
+					content: 'левая колонка'
+				},
+				{
+					elem: 'col',
+					mods: { mw: 6 },
+					content: 'правая колонка'
+				}
+			]
+		}
+	];
+});
+
+block('page-registration-step1').elem('title').content()('Регистрация');
