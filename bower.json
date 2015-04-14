@@ -1,0 +1,13 @@
+{
+  "name": "sj-proto",
+  "version": "0.0.0",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bnsf": "~0.1.0",
+    "bem-components": "^2.0.0"
+  }
+}
