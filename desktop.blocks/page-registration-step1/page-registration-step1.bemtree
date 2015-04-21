@@ -4,47 +4,33 @@ block('page-registration-step1').content()(function () {
 			block: 'row',
 			mods: {
 				sac: true,
-				svat: true
+				svam: true,
+				fullheight: true
 			},
 			content: [
 				{
 					elem: 'col',
 					content: [
-					{
-						block: 'registration-step1-header',
-						content: [
-							{
-								elem: 'title',
-								content: 'Регистрация'
-							},
-							{
-								elem: 'subtitle',
-								content: 'Всего 42 простых шага'
-							}
-						]
-					}]
-				},
-			]
-		},
-		{
-			block: 'row',
-			mods: {
-				sac: true,
-				svam: true
-			},
-			content: [
-				{
-					elem: 'col',
-					mods: {
-						sw: 1,
-					},
-					content: [
+						{
+							block: 'registration-step1-header',
+							content: [
+								{
+									elem: 'title',
+									content: 'Регистрация'
+								},
+								{
+									elem: 'subtitle',
+									content: 'Всего 42 простых шага'
+								}
+							]
+						},
 						{
 							block: 'form',
 							mods: {
 								'has-validate': true,
 								message: 'text',
-								theme: 'islands'
+								theme: 'islands',
+								centered: true
 							},
 							action: '/no-action-yet',
 							method: 'POST',

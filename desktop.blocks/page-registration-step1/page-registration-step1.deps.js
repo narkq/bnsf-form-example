@@ -1,14 +1,21 @@
 ({
     mustDeps: ['i-page'],
 	shouldDeps: [
-		'row',
-		'col',
+		{
+			block: 'row',
+			mods: {
+				fullheight: true
+			}
+		},
+		{
+			block: 'col',
+		},
 		{
 			block: 'form',
 			mods: {
 				theme: 'islands',
-				'has-validate': true,
-				ajax: true
+				centered: true,
+				'has-validate': true
 			}
 		},
 		{

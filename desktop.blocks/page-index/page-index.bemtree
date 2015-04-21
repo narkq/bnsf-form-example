@@ -1,5 +1,30 @@
 block('page-index').content()(function () {
-    return 'page-index';
+    return [
+		{
+			block: 'row',
+			mods: {
+				sac: true,
+				svam: true,
+				fullheight: true
+			},
+			content: [
+				{
+					elem: 'col',
+					content: [
+						{
+							block: 'link',
+							url: path('page-registration-step1'),
+							mods: {
+								theme: 'islands',
+								size: 'xl'
+							},
+							content: 'Регистрация'
+						}
+					]
+				}
+			]
+		}
+	];
 });
 
-block('page-index').elem('title').content()('main page');
+block('page-index').elem('title').content()('Главная');
