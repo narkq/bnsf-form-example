@@ -2,6 +2,10 @@ block('page-registration-step1').content()(function () {
     return [
 		{
 			block: 'row',
+			mods: {
+				sac: true,
+				svat: true
+			},
 			content: [
 				{
 					elem: 'col',
@@ -24,17 +28,108 @@ block('page-registration-step1').content()(function () {
 		},
 		{
 			block: 'row',
+			mods: {
+				sac: true,
+				svam: true
+			},
 			content: [
 				{
 					elem: 'col',
-					mods: { mw: 6 },
-					content: 'левая колонка'
+					mods: {
+						sw: 1,
+					},
+					content: [
+						{
+							block: 'form',
+							mods: {
+								'has-validate': true,
+								message: 'text',
+								theme: 'islands'
+							},
+							action: '/no-action-yet',
+							method: 'POST',
+							content: [
+								{
+									block: 'form-field',
+									mods: {
+										type: 'input',
+										'has-validate': true,
+										required: true,
+										message: 'text',
+										theme: 'islands'
+									},
+									content: [
+										{
+											block: 'label',
+											mods: {
+												theme: 'islands'
+											},
+											content: 'Ваше имя'
+										},
+										{
+											block: 'input',
+											mods: {
+												theme: 'islands',
+												size: 'm'
+											},
+											name: 'username'
+										},
+										{
+											block: 'message',
+											mods: {
+												type: 'text',
+												theme: 'islands'
+											}
+										}
+									]
+								},
+								{
+									block: 'form-field',
+									mods: {
+										type: 'input',
+										'has-validate': true,
+										validation: 'email',
+										message: 'text',
+										theme: 'islands'
+									},
+									content: [
+										{
+											block: 'label',
+											mods: {
+												theme: 'islands'
+											},
+											content: 'Электропочта'
+										},
+										{
+											block: 'input',
+											mods: {
+												theme: 'islands',
+												size: 'm'
+											},
+											name: 'email'
+										},
+										{
+											block: 'message',
+											mods: {
+												type: 'text',
+												theme: 'islands'
+											}
+										}
+									]
+								},
+								{
+									block: 'button',
+									mods: {
+										type: 'submit',
+										theme: 'islands',
+										size: 'm',
+										view: 'action'
+									},
+									text: 'Продолжить'
+								}
+							]
+						}]
 				},
-				{
-					elem: 'col',
-					mods: { mw: 6 },
-					content: 'правая колонка'
-				}
 			]
 		}
 	];

@@ -9,6 +9,7 @@
   "dependencies": {
     "bnsf": "~0.1.0",
     "bem-components": "^2.0.0",
-    "bem-grid": "1.2.3"
+    "bem-grid": "1.2.3",
+    "bem-forms": "git://github.com/bem/bem-forms.git"
   }
 }
