@@ -1,8 +1,9 @@
-#sj-proto
+#bnsf-form-example
 
 ## How to start:
 
 ```bash
+$ npm install
 $ gulp
 ```
 
