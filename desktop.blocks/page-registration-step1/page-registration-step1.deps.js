@@ -15,14 +15,17 @@
 			mods: {
 				theme: 'islands',
 				centered: true,
-				'has-validate': true
+				'has-validate': true,
+				message: 'text'
 			}
 		},
 		{
 			block: 'form-field',
 			mods: {
+				type: 'input',
 				theme: 'islands',
 				'has-validate': true,
+				message: 'text',
 				required: true
 			}
 		},
